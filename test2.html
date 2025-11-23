@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Simple Counter</h1>
+    <p>Counter: <span id="counterDisplay">0</span></p>
+    <button id="incrementButton">Increment</button>
+
+    <script>
+        let count = 0;
+        const counterDisplay = document.getElementById('counterDisplay');
+        const incrementButton = document.getElementById('incrementButton');
+
+        incrementButton.addEventListener('click', () => {
+            count++;
+            counterDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
